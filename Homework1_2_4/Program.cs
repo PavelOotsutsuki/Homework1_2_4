@@ -10,7 +10,7 @@ namespace Homework1_2_4
     {
         static void Main(string[] args)
         {
-            Random rand = new Random();
+            Random random = new Random();
             int number;
             int conditionMultiplicity1 = 3;
             int conditionMultiplicity2 = 5;
@@ -18,7 +18,7 @@ namespace Homework1_2_4
             int numberMin = 0;
             int sum=0;
 
-            number = rand.Next(numberMin, numberMax+1);
+            number = random.Next(numberMin, numberMax+1);
 
             for (int i = 1; i < number+1; i++)
             {
@@ -27,6 +27,7 @@ namespace Homework1_2_4
                     sum += i;
                 }
             }
+
             Console.WriteLine("У числа " + number + " сумма равна " + sum);
         }
     }
